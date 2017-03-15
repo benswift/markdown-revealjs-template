@@ -19,6 +19,11 @@ slides: $(md:.md=.html)
         --variable=controls:false \
         --variable=transition:fade \
         --variable=viewDistance:10 \
+        --variable=width:\"100%\" \
+        --variable=height:\"100%\" \
+        --variable=margin:0 \
+        --variable=minScale:1 \
+        --variable=maxScale:1 \
         -i "$(<F)" -o "$(@F)"
 
 css:

@@ -4,7 +4,7 @@ slide-theme := anucs
 # find all the .md source files
 md := $(wildcard *.md)
 
-all: slides
+all: slides css
 
 slides: $(md:.md=.html)
 

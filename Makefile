@@ -29,5 +29,8 @@ slides: $(md:.md=.html)
 css:
 	sass --no-cache reveal.js/css/theme/source/$(slide-theme).scss reveal.js/css/theme/$(slide-theme).css
 
+watchcss:
+	sass --no-cache --watch reveal.js/css/theme/source/$(slide-theme).scss\:reveal.js/css/theme/$(slide-theme).css
+
 clean:
 	rm $(md:.md=.html)

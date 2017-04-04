@@ -19,6 +19,7 @@ slides: $(md:.md=.html)
         --variable=controls:false \
         --variable=transition:fade \
         --variable=viewDistance:10 \
+        --variable=center:false \
         --variable=width:\"100%\" \
         --variable=height:\"100%\" \
         --variable=margin:0 \

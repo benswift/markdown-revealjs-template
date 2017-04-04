@@ -1,4 +1,6 @@
-# the name of a css file in reveal.js/css/theme
+# the name of a css file in scripts/reveal.js/css/theme
+revealjs-url := scripts/reveal.js
+revealjs-theme-path := $(revealjs-url)/css/theme
 slide-theme := anucs
 
 # find all the .md source files
@@ -14,7 +16,7 @@ slides: $(md:.md=.html)
 	      --no-highlight \
         --slide-level=2 \
         --include-in-header=revealjs-header.html \
-        --variable=revealjs-url:reveal.js \
+        --variable=revealjs-url:$(revealjs-url) \
         --variable=theme:$(slide-theme) \
         --variable=controls:false \
         --variable=transition:fade \
@@ -27,14 +29,13 @@ slides: $(md:.md=.html)
         --variable=maxScale:1 \
         -i "$(<F)" -o "$(@F)"
 
-reveal.js/css/theme/$(slide-theme).css: reveal.js/css/theme/source/$(slide-theme).scss
+$(revealjs-theme-path)/$(slide-theme).css: $(revealjs-theme-path)/source/$(slide-theme).scss
 	sass --no-cache $< $@
 
-css: reveal.js/css/theme/$(slide-theme).css
+css: $(revealjs-theme-path)/$(slide-theme).css
 
 watch:
-	sass --no-cache --watch reveal.js/css/theme/source/$(slide-theme).scss\:reveal.js/css/theme/$(slide-theme).css
+	sass --no-cache --watch $(revealjs-theme-path)/source/$(slide-theme).scss\:$(revealjs-theme-path)/$(slide-theme).css
 
 clean:
-	rm $(md:.md=.html)
-	rm reveal.js/css/theme/$(slide-theme).css
+	rm $(md:.md=.html) $(revealjs-theme-path)/$(slide-theme).css

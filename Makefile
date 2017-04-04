@@ -27,11 +27,14 @@ slides: $(md:.md=.html)
         --variable=maxScale:1 \
         -i "$(<F)" -o "$(@F)"
 
-css:
-	sass --no-cache reveal.js/css/theme/source/$(slide-theme).scss reveal.js/css/theme/$(slide-theme).css
+reveal.js/css/theme/$(slide-theme).css: reveal.js/css/theme/source/$(slide-theme).scss
+	sass --no-cache $< $@
 
-watchcss:
+css: reveal.js/css/theme/$(slide-theme).css
+
+watch:
 	sass --no-cache --watch reveal.js/css/theme/source/$(slide-theme).scss\:reveal.js/css/theme/$(slide-theme).css
 
 clean:
 	rm $(md:.md=.html)
+	rm reveal.js/css/theme/$(slide-theme).css

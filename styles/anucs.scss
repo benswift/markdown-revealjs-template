@@ -64,6 +64,11 @@ $borderBottom: 3vh;
         text-align: left;
         padding: 0 $sidePadding 0 $sidePadding;
 
+        // lists
+        ul,ol {
+            list-style-position: inside;
+        }
+
         // titlecard level
         .level1 h1 {
             text-align: center;

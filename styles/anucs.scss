@@ -55,18 +55,14 @@ $borderBottom: 3vh;
         }
     }
 
+    // this keeps everything (horizontally) on the page
+    .slides > section {
+        width: calc(100vw - #{$sidePadding} * 2);
+    }
 
     .slides {
         text-align: left;
         padding: 0 $sidePadding 0 $sidePadding;
-
-        .stack {
-            width: calc(100vw - #{$sidePadding} * 2);
-        }
-
-        .slide{
-            padding-top: $borderTop;
-        }
 
         // titlecard level
         .level1 h1 {
@@ -79,6 +75,7 @@ $borderBottom: 3vh;
         .level2 h2 {
             font-size: 100px;
             font-weight: 300;
+            margin-top: $borderTop;
             margin-bottom: 0.5em;
         }
 

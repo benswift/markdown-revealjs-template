@@ -84,8 +84,6 @@ $borderBottom: 3vh;
             h1,h2,h3 {
                 color: $anuGrey;
                 background-color: adjust-color($anuWhite, $alpha: -0.25);
-                // padding: 0 0.2em;
-                margin: 0;
                 display: inline-block;
             }
         }

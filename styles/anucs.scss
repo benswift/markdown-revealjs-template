@@ -1,0 +1,118 @@
+/**
+ * ANU CECS theme for reveal.hs by Ben Swift
+ *
+ * Based on heavily modified version of the "Black" theme by Hakim El Hattab, http://hakim.se
+ */
+
+// Include theme-specific fonts
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200i,300,300i,400,400i,600,600i');
+
+// Override theme settings (see ../template/settings.scss)
+$anuWhite: #FFF;
+$anuGrey: #262626;
+$anuGreen: #4C6E78;
+$anuCecsRed: #960022;
+
+$linkColor: lighten( $anuGreen, 20% );
+$linkColorHover: lighten( $linkColor, 10% );
+$selectionBackgroundColor: lighten( $linkColor, 10% );
+
+// if you change this, make sure you change the "width" variable in top-level
+// makefile (a bit of a hack, I know)
+$sidePadding: 5vw;
+
+// border control
+$borderTop: 10vh;
+$borderBottom: 3vh;
+
+// theme
+.reveal {
+    // colours
+    background-color: $anuWhite;
+    color: $anuGrey;
+
+    // text
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 1.6;
+    strong {font-weight: 600;}
+    em {font-style: italic;}
+
+    // anu-style grey header
+    box-sizing: border-box;
+    border-top-color: $anuGrey;
+    border-top-style: solid;
+    border-top-width: $borderTop;
+
+    // progress bar
+    .progress {
+        height: $borderBottom;
+        background-color: lighten($anuGreen, 20%);
+        span {
+            background-color: $anuGreen;
+        }
+    }
+
+
+    .slides {
+        text-align: left;
+        padding: 0 $sidePadding 0 $sidePadding;
+
+        .stack {
+            width: calc(100vw - #{$sidePadding} * 2);
+        }
+
+        .slide{
+            padding-top: $borderTop;
+        }
+
+        // titlecard level
+        .level1 h1 {
+            text-align: center;
+            font-size: 150px;
+            font-weight: 200;
+        }
+
+        // slide level
+        .level2 h2 {
+            font-size: 100px;
+            font-weight: 300;
+            margin-bottom: 0.5em;
+        }
+
+        // higlight text (e.g. for use with image background)
+        .text-hl {
+            h1,h2,h3 {
+                color: $anuGrey;
+                background-color: adjust-color($anuWhite, $alpha: -0.25);
+                // padding: 0 0.2em;
+                margin: 0;
+                display: inline-block;
+            }
+        }
+
+        // don't underline links
+        a {
+            text-decoration: none;
+            font-weight: 400;
+        }
+        // source code
+        code {
+            font-family: 'Source Code Pro', monospace;
+            padding: 0.1em;
+            background-color: #ddd;
+            box-sizing: border-box;
+        }
+
+        pre > code {
+            box-sizing: border-box;
+            background: #fafafa;
+            text-align: left;
+            margin: 1em 0;
+            line-height: 1.2;
+            font-size: 0.9em;
+        }
+    }
+}

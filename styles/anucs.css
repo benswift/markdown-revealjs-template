@@ -1,0 +1,64 @@
+/**
+ * ANU CECS theme for reveal.hs by Ben Swift
+ *
+ * Based on heavily modified version of the "Black" theme by Hakim El Hattab, http://hakim.se
+ */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200i,300,300i,400,400i,600,600i");
+.reveal {
+  background-color: #FFF;
+  color: #262626;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 1.6;
+  box-sizing: border-box;
+  border-top-color: #262626;
+  border-top-style: solid;
+  border-top-width: 10vh; }
+  .reveal strong {
+    font-weight: 600; }
+  .reveal em {
+    font-style: italic; }
+  .reveal .progress {
+    height: 3vh;
+    background-color: #7da2ad; }
+    .reveal .progress span {
+      background-color: #4C6E78; }
+  .reveal .slides {
+    text-align: left;
+    padding: 0 5vw 0 5vw; }
+    .reveal .slides .stack {
+      width: calc(100vw - 5vw * 2); }
+    .reveal .slides .slide {
+      padding-top: 10vh; }
+    .reveal .slides .level1 h1 {
+      text-align: center;
+      font-size: 150px;
+      font-weight: 200; }
+    .reveal .slides .level2 h2 {
+      font-size: 100px;
+      font-weight: 300;
+      margin-bottom: 0.5em; }
+    .reveal .slides .text-hl h1, .reveal .slides .text-hl h2, .reveal .slides .text-hl h3 {
+      color: #262626;
+      background-color: rgba(255, 255, 255, 0.75);
+      margin: 0;
+      display: inline-block; }
+    .reveal .slides a {
+      text-decoration: none;
+      font-weight: 400; }
+    .reveal .slides code {
+      font-family: 'Source Code Pro', monospace;
+      padding: 0.1em;
+      background-color: #ddd;
+      box-sizing: border-box; }
+    .reveal .slides pre > code {
+      box-sizing: border-box;
+      background: #fafafa;
+      text-align: left;
+      margin: 1em 0;
+      line-height: 1.2;
+      font-size: 0.9em; }
+
+/*# sourceMappingURL=anucs.css.map */

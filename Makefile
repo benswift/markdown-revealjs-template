@@ -1,5 +1,5 @@
 # the name of a css file in scripts/reveal.js/css/theme
-revealjs-url := scripts/reveal.js
+revealjs-url := scripts/reveal.js-3.4.1
 slide-theme := anucs
 
 # find all the .md source files

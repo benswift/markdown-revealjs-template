@@ -1,3 +1,0 @@
-[submodule "reveal.js"]
-	path = scripts/reveal.js
-	url = git@github.com:benswift/reveal.js.git

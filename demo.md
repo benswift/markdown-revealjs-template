@@ -19,7 +19,7 @@
  !-- THE SOFTWARE.
   -->
 
-# Here's a slide #
+# Here's a slide {.center}
 
 ## and another one
 
@@ -28,7 +28,7 @@ With some stuff.
 - bullet one
 - bullet two
 
-# Another top-level one
+# Another top-level one {.center}
 
 ## A code slide
 

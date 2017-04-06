@@ -21,35 +21,30 @@
  * THE SOFTWARE.
  */
 
-// Include theme-specific fonts
+// fonts
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200i,300,300i,400,400i,600,600i');
 
+// colors
 $anuWhite: #FFF;
 $anuGrey: #262626;
 $anuGreen: #4C6E78;
 $anuBlue: #80A2CC;
 $anuCecsRed: #960022;
 
-$linkColor: lighten( $anuGreen, 20% );
-$linkColorHover: lighten( $linkColor, 10% );
-$selectionBackgroundColor: lighten( $linkColor, 10% );
-
 // if you change this, make sure you change the "width" variable in top-level
 // makefile (a bit of a hack, I know)
 $sidePadding: 5vw;
 
-// border control
+// top/bottom borders
 $borderTop: 10vh;
 $borderBottom: 3vh;
 
-// theme
 .reveal {
-    // colours
     background-color: $anuWhite;
-    color: $anuGrey;
 
     // text
+    color: $anuGrey;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 3.5vw;
     font-weight: 300;
@@ -63,28 +58,22 @@ $borderBottom: 3vh;
     border-top-style: solid;
     border-top-width: $borderTop;
 
-    // progress bar
+    // bottom progress bar
     .progress {
         height: $borderBottom;
         background-color: lighten($anuGreen, 20%);
-        span {
-            background-color: $anuGreen;
-        }
+        span {background-color: $anuGreen;}
     }
 
     // this keeps everything (horizontally) on the page
-    .slides > section {
-        width: calc(100vw - #{$sidePadding} * 2);
-    }
+    .slides > section {width: calc(100vw - #{$sidePadding} * 2);}
 
     .slides {
         text-align: left;
         padding: 0 $sidePadding 0 $sidePadding;
 
         // lists
-        ul,ol {
-            list-style-position: inside;
-        }
+        ul,ol {list-style-position: inside;}
 
         // titlecard level
         h1 {
@@ -118,14 +107,13 @@ $borderBottom: 3vh;
         // source code
         code {
             font-family: 'Source Code Pro', monospace;
-            padding: 0.1em;
+            padding: 0.05em;
             background-color: #ddd;
             box-sizing: border-box;
         }
 
         pre > code {
-            box-sizing: border-box;
-            background: #fafafa;
+            background-color: #fafafa;
             text-align: left;
             margin: 1em 0;
             line-height: 1.2;

@@ -61,8 +61,8 @@ $borderBottom: 3vh;
     // bottom progress bar
     .progress {
         height: $borderBottom;
-        background-color: lighten($anuGreen, 20%);
-        span {background-color: $anuGreen;}
+        background-color: lighten($anuBlue, 20%);
+        span {background-color: $anuBlue;}
     }
 
     // this keeps everything (horizontally) on the page
@@ -101,6 +101,7 @@ $borderBottom: 3vh;
 
         // don't underline links
         a {
+            color: darken($anuBlue, 10%);
             text-decoration: none;
             font-weight: 400;
         }

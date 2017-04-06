@@ -41,3 +41,11 @@ Using `scheme`, we can...
 ```
 
 ## {data-background-image="adriel-kloppenburg-14828.jpg"}
+
+## For more info
+
+Check it out on GitHub:
+
+<https://github.com/benswift/slide-deck-anu>
+
+

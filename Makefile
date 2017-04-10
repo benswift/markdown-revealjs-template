@@ -22,7 +22,7 @@ revealjs-url := scripts/reveal.js-3.4.1
 slide-theme := anucs
 
 # find all the .md source files
-md := $(filter-out $(wildcard *.md), README.md)
+md := $(filter-out README.md, $(wildcard *.md))
 
 all: slides css
 

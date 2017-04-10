@@ -42,6 +42,20 @@ Using `scheme`, we can...
 
 ## {data-background-image="adriel-kloppenburg-14828.jpg"}
 
+## Plots (it's just HTML+js)
+
+<div id="tester" style="width=90vw; height=50vh;"></div>
+
+<script src="./scripts/plotly-latest.min.js"></script>
+<script>
+TESTER = document.getElementById('tester');
+
+Plotly.plot( TESTER, [{
+    x: [1, 2, 3, 4, 5],
+    y: [1, 2, 4, 8, 16] }], { 
+    margin: { t: 0 } } );
+</script>
+
 ## For more info
 
 Check it out on GitHub:

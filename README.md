@@ -1,6 +1,10 @@
 # Slide deck template
 
-Copyright (C) 2017 Ben Swift
+An opinionated workflow for turning markdown files into nice slides
+with [pandoc](http://pandoc.org/)
+and [reveal.js](http://lab.hakim.se/reveal-js/#/)
+
+There are other ways to do this, e.g. <https://github.com/webpro/reveal-md>
 
 ## Requirements
 
@@ -8,7 +12,7 @@ Copyright (C) 2017 Ben Swift
 - [pandoc](http://pandoc.org/)
 - [sass](https://sass-lang.com/) (for styling)
 
-This repo also includes [reveal.js](http://lab.hakim.se/reveal-js/#/) 3.4.1
+This repo includes [reveal.js](http://lab.hakim.se/reveal-js/#/) 3.4.1
 and [highlight.js](https://highlightjs.org/) in the `scripts` directory.
 
 ## Usage

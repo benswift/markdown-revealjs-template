@@ -28,7 +28,7 @@ With some stuff.
 - bullet one
 - bullet two
 
-## Fullscreen images {data-background-image="images/adriel-kloppenburg-14828.jpg"}
+## Fullscreen images {.text-hl data-background-image="images/adriel-kloppenburg-14828.jpg"}
 
 ## Source code
 

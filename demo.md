@@ -19,28 +19,30 @@
  !-- THE SOFTWARE.
   -->
 
-# Here's a slide {.center}
+# Title {.center}
 
-## and another one
+## Here's a slide
 
 With some stuff.
 
 - bullet one
 - bullet two
 
-# Another top-level one {.center}
+## Fullscreen images {data-background-image="images/adriel-kloppenburg-14828.jpg"}
 
-## A code slide
+## Source code
 
-Using `scheme`, we can...
+Syntax highlighting courtesy of [`highlight.js`](https://highlightjs.org/)
 
-``` scheme
+```scheme
 (println "here's the thing")
-
-(begin 1 2)
 ```
 
-## {data-background-image="adriel-kloppenburg-14828.jpg"}
+```c
+int main(void){
+  printf("foo bar.\n");
+}
+```
 
 ## Plots (it's just HTML+js)
 
@@ -60,6 +62,6 @@ Plotly.plot( TESTER, [{
 
 Check it out on GitHub:
 
-<https://github.com/benswift/slide-deck-anu>
+<https://github.com/benswift/markdown-revealjs-template>
 
 

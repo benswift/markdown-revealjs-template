@@ -15,12 +15,17 @@ There are other ways to do this, e.g. <https://github.com/webpro/reveal-md>
 This repo includes [reveal.js](http://lab.hakim.se/reveal-js/#/) 3.4.1
 and [highlight.js](https://highlightjs.org/) in the `scripts` directory.
 
-## Usage
+## Create
 
 1. write your slides as markdown (`.md`) files in the top-level directory
 2. run `make` to generate a html slideshow
 
-## Hacking
+## Present
+
+1. open the generated `.html` files in a browser
+2. `space` to advance to the next slide, `f` for fullscreen, `?` for help
+
+## Hack
 
 If you want to hack the theme, look in `styles/anucs.scss`. If you want to hack
 other variables (e.g. the ones that pandoc sends to reveal.js) then have a look

@@ -17,8 +17,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-# the name of a css file in js/reveal.js/css/theme
-revealjs-url := js/reveal.js-3.4.1
+revealjs-url := js/reveal.js-3.5.0
 slide-theme := anucs
 
 # find all the .md source files

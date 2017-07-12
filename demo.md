@@ -32,7 +32,7 @@ With some stuff.
 
 ## Source code
 
-Syntax highlighting courtesy of [`highlight.js`](https://highlightjs.org/)
+Syntax highlighting courtesy of [highlight.js](https://highlightjs.org/)
 
 ```scheme
 (println "here's the thing")

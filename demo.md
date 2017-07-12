@@ -48,7 +48,7 @@ int main(void){
 
 <div id="tester" style="width=90vw; height=50vh;"></div>
 
-<script src="./scripts/plotly-latest.min.js"></script>
+<script src="./js/plotly-latest.min.js"></script>
 <script>
 TESTER = document.getElementById('tester');
 

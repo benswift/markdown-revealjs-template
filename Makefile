@@ -17,8 +17,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-# the name of a css file in scripts/reveal.js/css/theme
-revealjs-url := scripts/reveal.js-3.4.1
+# the name of a css file in js/reveal.js/css/theme
+revealjs-url := js/reveal.js-3.4.1
 slide-theme := anucs
 
 # find all the .md source files
@@ -47,13 +47,13 @@ slides: $(md:.md=.html)
         --variable=maxScale:1 \
         -i "$(<F)" -o "$(@F)"
 
-styles/$(slide-theme).css: styles/$(slide-theme).scss
+css/$(slide-theme).css: css/$(slide-theme).scss
 	sass --no-cache $< $@
 
-css: styles/$(slide-theme).css
+css: css/$(slide-theme).css
 
 watch:
-	sass --no-cache --watch styles/$(slide-theme).scss\:styles/$(slide-theme).css
+	sass --no-cache --watch css/$(slide-theme).scss\:css/$(slide-theme).css
 
 clean:
-	rm $(md:.md=.html) styles/$(slide-theme).css
+	rm $(md:.md=.html) css/$(slide-theme).css

@@ -36,6 +36,7 @@ slides: $(md:.md=.html)
         --variable=revealjs-url:$(revealjs-url) \
         --variable=theme:none \
         --variable=controls:false \
+        --variable=history:true \
         --variable=transition:fade \
         --variable=viewDistance:10 \
         --variable=center:false \

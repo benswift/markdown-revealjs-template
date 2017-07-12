@@ -40,13 +40,15 @@ $sidePadding: 5vw;
 $borderTop: 10vh;
 $borderBottom: 3vh;
 
+// for rem purposes
+html { font-size: 3vw; }
+
 .reveal {
     background-color: $anuWhite;
 
     // text
     color: $anuGrey;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 3.5vw;
     font-weight: 300;
     line-height: 1.6;
     strong {font-weight: 600;}
@@ -78,13 +80,13 @@ $borderBottom: 3vh;
         // titlecard level
         h1 {
             text-align: center;
-            font-size: 8vw;
+            font-size: 3rem;
             font-weight: 200;
         }
 
         // slide level
         h2 {
-            font-size: 6vw;
+            font-size: 2rem;
             font-weight: 300;
             margin-top: $borderTop;
             margin-bottom: 0.5em;

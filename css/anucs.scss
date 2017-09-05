@@ -37,11 +37,11 @@ $anuCecsRed: #960022;
 $sidePadding: 5vw;
 
 // top/bottom borders
-$borderTop: 10vh;
+$borderTop: 7vh;
 $borderBottom: 3vh;
 
 // for rem purposes
-html { font-size: 3vw; }
+html { font-size: 4vh; }
 
 .reveal {
     background-color: $anuWhite;
@@ -75,13 +75,27 @@ html { font-size: 3vw; }
         padding: 0 $sidePadding 0 $sidePadding;
 
         // lists
-        ul,ol {list-style-position: inside;}
+        ul,ol {
+            list-style-position: inside;
+            list-style: none;
+
+            li + li {
+                padding-top: 0.8rem;
+            }
+
+            li li {
+                margin-left: 0.5rem;
+                padding-top: 0.3rem;
+                font-size: 0.7rem;
+            }
+        }
 
         // titlecard level
         h1 {
             text-align: center;
             font-size: 3rem;
-            font-weight: 200;
+            margin-top: $borderTop;
+            font-weight: 300;
         }
 
         // slide level
@@ -94,10 +108,28 @@ html { font-size: 3vw; }
 
         // higlight text (e.g. for use with image background)
         .text-hl {
-            h1,h2,h3 {
+            h1,h2,h3,p,li {
                 color: $anuGrey;
                 background-color: adjust-color($anuWhite, $alpha: -0.25);
                 display: inline-block;
+            }
+        }
+
+        // impact slides
+        .impact {
+            font-size: 2rem;
+            vertical-align: middle;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 1rem;
+            background-color: $anuGrey;
+            color: $anuWhite;
+            font-weight: 600;
+            strong {
+                color: lighten($anuBlue, 5%);
+            }
+            code {
+                color: lighten($anuGrey, 10%);
             }
         }
 
@@ -106,6 +138,11 @@ html { font-size: 3vw; }
             color: darken($anuBlue, 10%);
             text-decoration: none;
             font-weight: 400;
+
+            &:hover {
+                color: $anuWhite;
+                background-color: darken($anuBlue, 10%);
+            }
         }
         // source code
         code {
@@ -121,6 +158,39 @@ html { font-size: 3vw; }
             margin: 1em 0;
             line-height: 1.2;
             font-size: 0.9em;
+            font-weight: 400;
+        }
+
+        p.prose {
+            font-size: 0.9rem;
+            line-height: 1.2;
+            padding-bottom: 0.5rem;
+        }
+        // from https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/
+        blockquote {
+            font-size: 0.9rem;
+            background: #fafafa;
+            border-left: 10px solid #ccc;
+            margin: 1.5em 10px;
+            padding: 0.5em 10px;
+            quotes: "\201C""\201D""\2018""\2019";
+        }
+        blockquote:before {
+            color: #ccc;
+            content: open-quote;
+            font-size: 4em;
+            line-height: 0.1em;
+            margin-right: 0.25em;
+            vertical-align: -0.4em;
+        }
+        blockquote p {
+            display: inline;
         }
     }
+}
+
+// responsive
+
+@media (max-width: 400px) {
+    html { font-size: 6vw; }
 }

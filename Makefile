@@ -52,8 +52,9 @@ css/$(slide-theme).css: css/$(slide-theme).scss
 
 css: css/$(slide-theme).css
 
-watch:
-	sass --no-cache --watch css/$(slide-theme).scss\:css/$(slide-theme).css
-
 clean:
 	rm $(md:.md=.html) css/$(slide-theme).css
+
+## if you have watchexec installed: https://github.com/mattgreen/watchexec
+watch:
+	watchexec --exts md,js,scss,html make
